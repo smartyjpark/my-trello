@@ -1,0 +1,125 @@
+.list-content {
+  width: 100%;
+  height: auto;    
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  background-color: #ebecf0;
+  border-radius: 3px;
+  box-sizing: border-box;    
+  max-height: 100%;
+  position: relative;
+  white-space: normal;
+}
+
+.list-header {
+  flex: 0 0 auto;
+  padding: 10px 8px;
+  position: relative;
+  min-height: 20px;
+}
+
+.list-header textarea {
+  overflow: hidden;
+  overflow-wrap: break-word;
+  height: 28px;
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  font-weight: 600;
+  margin: -4px 0;
+  height: 20px;
+  min-height: 20px;
+  padding: 4px 8px;
+  resize: none;
+  max-height: 256px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list-header textarea:focus {
+  background: #fff;
+}
+
+.list-control {
+  min-height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit .btn-toggle-add-card-form {
+  display: none;
+}
+
+.btn-toggle-add-card-form {
+  border-radius: 3px;
+  display: block;
+  flex: 1 0 auto;
+  margin: 2px 0 8px 8px;
+  padding: 4px 8px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  border: none;
+  outline-style: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #6b778c;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.list-cards {
+  margin: 0 4px;
+  padding: 0 4px;
+  z-index: 1;
+}
+
+form[name=add-card]  {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+form[name=add-card] > button {
+  display: inline-block;
+}
+
+.edit form[name=add-card] > button.btn-toggle-add-card-form {
+  display: inline-block;
+  color: grey;
+  margin: 0;
+  font-size: 20px;
+}
+
+.edit form[name=add-card] {
+  display: block;
+}
+
+form[name=add-card] > button.btn-submit-add-card {
+  background-color: #5aac44;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  height: 32px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+form[name=add-card] .list-name-input {
+  background: #fff;
+  border: none;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  display: block;
+  margin: 0 0 5px;
+  width: 100%;
+  color: #172b4d;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
